@@ -12,6 +12,9 @@ const Home = () => {
           Browse products fetched from a public API and view detailed information
           using a clean and responsive single page application.
         </p>
+        <button className="bg-slate-900 text-white px-6 py-3 rounded-md hover:bg-slate-800 transition">
+          Explore Products
+        </button>
       </div>
       </div>
     </div>
