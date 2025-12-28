@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
-  const { title, price, image } = product;
+   const navigate = useNavigate();
+  const {id, title, price, image } = product;
 
   return (
     <div className="cursor-pointer border border-gray-100 rounded-lg p-4 shadow-sm hover:shadow-lg transition bg-gray-100 mx-6">
@@ -19,7 +21,9 @@ const ProductCard = ({ product }) => {
       </h3>
 
       <p className="text-slate-900 font-bold">${price}</p>
-      <Button text="View Details"/>
+      <Button 
+      onClick={() => navigate(`/product/${id}`)}
+      text="View Details"/>
     </div>
   );
 };
