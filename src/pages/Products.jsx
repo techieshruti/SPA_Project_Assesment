@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import ProductCard from "../components/ProductCard";
+import Loader from "../components/Loader";
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -28,8 +29,8 @@ const Products = () => {
     },[]);
 
     if (loading) {
-    return <p className="text-center mt-10">Loading products...</p>;
-  }
+  return <Loader />;
+}
 
   if (error) {
     return <p className="text-center mt-10 text-red-500">{error}</p>;

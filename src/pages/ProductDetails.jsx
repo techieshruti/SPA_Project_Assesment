@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Loader from "../components/Loader";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -27,8 +28,8 @@ useEffect(() => {
   }, [id]);
 
   if (loading) {
-    return <p className="text-center mt-10">Loading product...</p>;
-  }
+  return <Loader />;
+}
 
   if (error) {
     return <p className="text-center mt-10 text-red-500">{error}</p>;
