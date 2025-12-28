@@ -10,7 +10,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-slate-900 text-white px-6 md:px-20 py-4 flex items-center justify-between">
+    <nav className="bg-slate-100 text-slate-900 dark:bg-slate-700 dark:text-white px-6 md:px-20 py-4 flex items-center justify-between">
       {/* Logo */}
       <h1
         onClick={() => navigate("/")}
@@ -20,7 +20,8 @@ const Navbar = () => {
       </h1>
 
       {/* Navigation */}
-      <ul className="flex gap-6">
+      <div className="flex items-center gap-4">
+        <ul className="flex gap-6">
         {navItems.map((item) => (
           <NavLink
             key={item.name}
@@ -35,9 +36,11 @@ const Navbar = () => {
             }
           >
             {item.name}
+            
           </NavLink>
         ))}
       </ul>
+      </div>
     </nav>
   );
 };
