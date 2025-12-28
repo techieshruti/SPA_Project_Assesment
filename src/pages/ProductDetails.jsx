@@ -49,7 +49,27 @@ useEffect(() => {
         <h1 className="text-2xl font-bold text-slate-900 mb-4">
           {product.title}
         </h1>
+
+        <p className="text-slate-700 mb-4">
+          {product.description}
+        </p>
+
+        <p className="text-lg font-bold text-slate-900 mb-2">
+          ${product.price}
+        </p>
+
+        <p className="text-sm text-slate-500 mb-6">
+          Category: {product.category}
+        </p>
+
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-slate-900 text-white px-6 py-2 rounded-md hover:bg-slate-800 transition"
+        >
+          Back to Products
+        </button>
       </div>
+
     </div>
   )
 }

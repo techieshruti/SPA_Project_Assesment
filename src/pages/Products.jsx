@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import ProductCard from "../components/ProductCard";
 
-const Product = () => {
+const Products = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
@@ -44,4 +44,4 @@ const Product = () => {
   )
 }
 
-export default Product
+export default Products

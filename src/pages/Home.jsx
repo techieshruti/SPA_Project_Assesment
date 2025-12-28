@@ -1,7 +1,8 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom";
 import Button from '../components/Button'
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div>
         <div className="min-h-[calc(100vh-64px)] flex items-center justify-end px-6 bg-[url('https://i.pinimg.com/736x/43/d1/35/43d135d38689527d117c56015d80a458.jpg')] bg-no-repeat bg-cover">
@@ -15,7 +16,9 @@ const Home = () => {
         <p className="mb-6">
           you will find best quality of products here.
         </p>
-        <Button text="Explore Products"/>
+        <Button 
+        onClick={() => navigate("/products")}
+        text="Explore Products"/>
       </div>
       </div>
     </div>
