@@ -5,8 +5,8 @@ const Home = () => {
   const navigate = useNavigate();
   return (
     <div>
-        <div className="min-h-[calc(100vh-64px)] flex items-center justify-end px-6 bg-[url('https://i.pinimg.com/736x/43/d1/35/43d135d38689527d117c56015d80a458.jpg')] bg-no-repeat bg-cover">
-      <div className="max-w-md mr-20 p-6 text-center rounded-2xl
+        <div className="min-h-[calc(100vh-64px)] flex items-center justify-center md:justify-end px-6 bg-[url('https://i.pinimg.com/736x/43/d1/35/43d135d38689527d117c56015d80a458.jpg')] bg-no-repeat bg-cover">
+      <div className="max-w-md md:mr-20 p-6 text-center rounded-2xl
         bg-white/30 backdrop-blur-md shadow-lg border border-white/40">
         {/* heading */}
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
