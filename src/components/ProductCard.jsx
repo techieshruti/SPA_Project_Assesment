@@ -22,9 +22,17 @@ const ProductCard = () => {
                 setLoading(false);
             }
         };
-    })
 
+        fetchData();
+    },[]);
 
+    if (loading) {
+    return <p className="text-center mt-10">Loading products...</p>;
+  }
+
+  if (error) {
+    return <p className="text-center mt-10 text-red-500">{error}</p>;
+  }
 
   return (
     <div className="cursor-pointer border border-gray-100 rounded-lg p-4 shadow-sm hover:shadow-lg transition bg-gray-100 w-50 mx-6 my-4
