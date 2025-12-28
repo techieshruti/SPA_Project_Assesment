@@ -1,6 +1,31 @@
-import React from 'react'
+import { useEffect, useState } from "react"
 
 const ProductCard = () => {
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState("");
+
+    useEffect(()=>{
+        const fetchData= async()=>{
+            try{
+                const result= await fetch("https://fakestoreapi.com/products");
+                if(!result.ok){
+                    throw new Error("Failed to fetch products");
+                }
+                const data = await res.json();
+                setProducts(data);
+            }
+            catch(err){
+                setError(err.message);
+            }
+            finally{
+                setLoading(false);
+            }
+        };
+    })
+
+
+
   return (
     <div className="cursor-pointer border border-gray-100 rounded-lg p-4 shadow-sm hover:shadow-lg transition bg-gray-100 w-50 mx-6 my-4
     ">
