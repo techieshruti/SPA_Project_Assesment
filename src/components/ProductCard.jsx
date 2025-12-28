@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const ProductCard = ({ product }) => {
   const { title, price, image } = product;
@@ -18,6 +19,7 @@ const ProductCard = ({ product }) => {
       </h3>
 
       <p className="text-slate-900 font-bold">${price}</p>
+      <Button text="View Details"/>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../components/Button'
 
 const Home = () => {
   return (
@@ -14,9 +15,7 @@ const Home = () => {
         <p className="mb-6">
           you will find best quality of products here.
         </p>
-        <button className="bg-slate-900 text-white px-6 py-3 rounded-md hover:bg-slate-800 transition">
-          Explore Products
-        </button>
+        <Button text="Explore Products"/>
       </div>
       </div>
     </div>
