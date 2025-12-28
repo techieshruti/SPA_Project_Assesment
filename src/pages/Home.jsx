@@ -3,8 +3,8 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-        <div className="min-h-[calc(100vh-64px)] flex items-center justify-center px-6">
-      <div className="max-w-xl text-center">
+        <div className="min-h-[calc(100vh-64px)] flex items-center justify-end px-6 bg-[url('https://i.pinimg.com/736x/43/d1/35/43d135d38689527d117c56015d80a458.jpg')] bg-no-repeat bg-cover">
+      <div className="max-w-xl text-right">
         {/* heading */}
         <h1 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
           Welcome to Product Explorer
