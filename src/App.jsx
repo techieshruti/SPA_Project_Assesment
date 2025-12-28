@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import ProductCard from './components/ProductCard'
+import Product from './pages/Products'
 
 const App = () => {
   return (
     <div>
       <Navbar/>
-      {/* <Home/> */}
-      <ProductCard/>
+      <Home/>
+      <Product/>
     </div>
   )
 }

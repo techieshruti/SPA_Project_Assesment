@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+import ProductCard from "../components/ProductCard";
 
-const ProductCard = () => {
+const Product = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
@@ -12,7 +13,7 @@ const ProductCard = () => {
                 if(!result.ok){
                     throw new Error("Failed to fetch products");
                 }
-                const data = await res.json();
+                const data = await result.json();
                 setProducts(data);
             }
             catch(err){
@@ -43,4 +44,4 @@ const ProductCard = () => {
   )
 }
 
-export default ProductCard
+export default Product
