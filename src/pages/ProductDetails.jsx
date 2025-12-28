@@ -26,8 +26,31 @@ useEffect(() => {
     fetchProduct();
   }, [id]);
 
+  if (loading) {
+    return <p className="text-center mt-10">Loading product...</p>;
+  }
+
+  if (error) {
+    return <p className="text-center mt-10 text-red-500">{error}</p>;
+  }
+
   return (
-    <div>ProductDetails</div>
+    <div className="max-w-5xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10">
+        {/* Image */}
+      <div className="flex justify-center">
+        <img
+          src={product.image}
+          alt={product.title}
+          className="h-80 object-contain"
+        />
+      </div>
+
+      <div>
+        <h1 className="text-2xl font-bold text-slate-900 mb-4">
+          {product.title}
+        </h1>
+      </div>
+    </div>
   )
 }
 
