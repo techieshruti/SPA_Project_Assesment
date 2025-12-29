@@ -9,8 +9,8 @@ The application demonstrates API integration, client-side routing, reusable comp
 https://glowing-pothos-5c3815.netlify.app/
 
 ## 📸 Screenshots
-<img width="500" height="300" alt="HomePage" src="https://github.com/user-attachments/assets/9812cce5-4d6f-4b90-a65a-710695eeb62d" />  <img width="500" height="400" alt="About" src="https://github.com/user-attachments/assets/85991af8-2120-4427-aa6b-e3c59aebdac4" />
-<img width="500" height="300" alt="Products" src="https://github.com/user-attachments/assets/7c8b9c02-b543-4e5e-894c-8ad6c51dbe35" />  <img width="500" height="300" alt="ProductDetails" src="https://github.com/user-attachments/assets/9bfd8f80-16aa-4224-bee6-d0905056724b" />
+<img width="400" height="250" alt="HomePage" src="https://github.com/user-attachments/assets/9812cce5-4d6f-4b90-a65a-710695eeb62d" />  <img width="400" height="250" alt="About" src="https://github.com/user-attachments/assets/85991af8-2120-4427-aa6b-e3c59aebdac4" />
+<img width="400" height="250" alt="Products" src="https://github.com/user-attachments/assets/7c8b9c02-b543-4e5e-894c-8ad6c51dbe35" />  <img width="400" height="250" alt="ProductDetails" src="https://github.com/user-attachments/assets/9bfd8f80-16aa-4224-bee6-d0905056724b" />
 
 
 ## 📌 Project Overview
